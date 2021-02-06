@@ -4,7 +4,9 @@ import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { Graph1Component } from './graph1/graph1.component';
 import { ProgressComponent } from './progress/progress.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // import { PagesRoutingModule } from './pages.routing.module';
+
 
 const pagesRoutes: Routes = [
     {
@@ -14,6 +16,7 @@ const pagesRoutes: Routes = [
         { path: 'home', component: HomeComponent },
         { path: 'progress', component: ProgressComponent},
         { path: 'graph1', component: Graph1Component},
+        { path: 'account-settings', component: AccountSettingsComponent},
         { path: '', redirectTo: '/home', pathMatch: 'full'}
       ]
 }];

@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 import { PagesComponent } from './pages.component';
 import { HomeComponent } from './home/home.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -7,8 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { PagesRoutingModule} from './pages.routing.module';
 import { GraphDonuComponent } from 'src/app/component/graph-donu/graph-donu.component';
 import { IncrementadorComponent } from 'src/app/component/incrementador/incrementador.component';
-import { FormsModule } from '@angular/forms';
-import { ChartsModule } from 'ng2-charts';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ChartsModule } from 'ng2-charts';
     ProgressComponent,
     Graph1Component,
     IncrementadorComponent,
-    GraphDonuComponent
+    GraphDonuComponent,
+    AccountSettingsComponent
     // FontAwesomeModule
  ],
   imports: [
